@@ -1,14 +1,18 @@
-class Cine {
+class cine {
     
     public String datosPeliculas[][];
     public String salasTotales[];
     public String asientosTotales[];
-    public String asientosYaVendidios[];
+    public String asientosVendidios[];
     public String fechasDisponibles[];
     public String horasDidponibles[];
     public String precio[];
 
-    public void numeroDeEntradasVendidas(String asientosTotales, String asientosYaVendidos) {
+    public void numeroDeEntradasVendidas(String asientosTotales, String asientosVendidos) {
+        int totalAsientos = Integer.parseInt(asientosTotales);
+        int asientosYaVendidos = Integer.parseInt(asientosVendidos);
+
+        System.out.println("Vendidas: " + asientosYaVendidos + "/" + totalAsientos);
     }
     
     public void calcullarRecaudacion(String numeroEntradasVendidas, String precio){
@@ -33,10 +37,8 @@ class Cine {
     }
 
         public static void main(String[] args) {
+
         }
-
-
-
 
 
 }
