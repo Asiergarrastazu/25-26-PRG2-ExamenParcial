@@ -30,7 +30,8 @@ class cine {
     }
 
     public void comprarEntrada(String cartelera, String precio) {
-    
+        double p = Double.parseDouble(precio);
+        System.out.println("Compra: " + cartelera + " -> " + p + "€");
     }
 
     public void mapearAsientos(String asientosTotales, String asientosYaVendidos) {
@@ -45,6 +46,7 @@ class cine {
     }
 
     public void seleccionarAsiento(String numeroAsiento) {
+        System.out.println("Asiento: " + numeroAsiento);
     }
 
     public void mostrarCartelera(String crearCartelera) {
