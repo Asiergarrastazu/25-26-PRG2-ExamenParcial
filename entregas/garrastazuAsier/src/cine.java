@@ -34,6 +34,14 @@ class cine {
     }
 
     public void mapearAsientos(String asientosTotales, String asientosYaVendidos) {
+        int total = Integer.parseInt(asientosTotales);
+        int vendidos = Integer.parseInt(asientosYaVendidos);
+
+        for (int i = 0; i < total; i++) {
+            if (i < vendidos) System.out.print("[X]");
+            else System.out.print("[ ]");
+    }
+    System.out.println();
     }
 
     public void seleccionarAsiento(String numeroAsiento) {
