@@ -16,19 +16,21 @@ class cine {
     }
     
     public void calcullarRecaudacion(String numeroEntradasVendidas, String precio){
-    int entradas = Integer.parseInt(numeroEntradasVendidas);
-    double p = Double.parseDouble(precio);
-
-    System.out.println("Recaudación: " + (entradas * p));
+        int entradas = Integer.parseInt(numeroEntradasVendidas);
+        double p = Double.parseDouble(precio);
+        System.out.println("Recaudación: " + (entradas * p));
     }
     
     public void asignarProyeccion(String datosPeliculas, String horaDisponible, String fechaDisponible, String salaDisponible) {
+        System.out.println(datosPeliculas + " - " + salaDisponible + " - " + horaDisponible);
     }
 
     public void crearCartelera(String asignarProyeccion) {
+        System.out.println("Cartelera: " + asignarProyeccion);
     }
 
     public void comprarEntrada(String cartelera, String precio) {
+    
     }
 
     public void mapearAsientos(String asientosTotales, String asientosYaVendidos) {
@@ -38,6 +40,7 @@ class cine {
     }
 
     public void mostrarCartelera(String crearCartelera) {
+        System.out.println("Mostrando: " + crearCartelera);
     }
 
         public static void main(String[] args) {
