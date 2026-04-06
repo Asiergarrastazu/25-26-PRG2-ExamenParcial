@@ -16,6 +16,10 @@ class cine {
     }
     
     public void calcullarRecaudacion(String numeroEntradasVendidas, String precio){
+    int entradas = Integer.parseInt(numeroEntradasVendidas);
+    double p = Double.parseDouble(precio);
+
+    System.out.println("Recaudación: " + (entradas * p));
     }
     
     public void asignarProyeccion(String datosPeliculas, String horaDisponible, String fechaDisponible, String salaDisponible) {
