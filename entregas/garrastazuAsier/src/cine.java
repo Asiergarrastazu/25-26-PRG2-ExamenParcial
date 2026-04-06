@@ -8,14 +8,14 @@ class cine {
     public String horasDidponibles[];
     public String precio[];
 
-    public void numeroDeEntradasVendidas(String asientosTotales, String asientosVendidos) {
+    public void numeroEntradasVendidas(String asientosTotales, String asientosVendidos) {
         int totalAsientos = Integer.parseInt(asientosTotales);
         int asientosYaVendidos = Integer.parseInt(asientosVendidos);
 
         System.out.println("Vendidas: " + asientosYaVendidos + "/" + totalAsientos);
     }
     
-    public void calcullarRecaudacion(String numeroEntradasVendidas, String precio){
+    public void calcularRecaudacion(String numeroEntradasVendidas, String precio){
         int entradas = Integer.parseInt(numeroEntradasVendidas);
         double p = Double.parseDouble(precio);
         System.out.println("Recaudación: " + (entradas * p));
@@ -53,10 +53,16 @@ class cine {
         System.out.println("Mostrando: " + crearCartelera);
     }
 
-        public static void main(String[] args) {
-
+    public static void main(String[] args) {
+        cine cine = new cine();
+        
+        cine.numeroEntradasVendidas("100", "45");
+        cine.calcularRecaudacion("45", "8.5");
+        cine.asignarProyeccion("Avatar", "20:00", "10/04/2026", "Sala 1");
+        cine.crearCartelera("Avatar - Sala 1 - 20:00");
+        cine.mostrarCartelera("Avatar - Sala 1 - 20:00");
+        cine.mapearAsientos("10", "4");
+        cine.seleccionarAsiento("5");
+        cine.comprarEntrada("Avatar - Sala 1 - 20:00", "8.5");
         }
-
-
 }
-
